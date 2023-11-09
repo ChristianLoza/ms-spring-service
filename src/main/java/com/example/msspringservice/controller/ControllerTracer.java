@@ -13,10 +13,8 @@ import org.springframework.web.client.RestTemplate;
 @RestController
 @RequestMapping("v1")
 public class ControllerTracer {
-
     @Autowired
     private Tracer tracer;
-
     @GetMapping(value = "hello")
     public ResponseObject hellWorld(){
         ResponseObject responseObject = new ResponseObject();
